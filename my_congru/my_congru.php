@@ -2,7 +2,7 @@
 
 function my_congru($a, $b, $n)
 {
-    if (!$n)
+    if (!$n || !is_int($a) || !is_int($b) || !is_int($n))
     {
         echo "va t'acheter des doigts !\n";
         return (-1);

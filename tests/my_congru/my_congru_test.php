@@ -24,4 +24,11 @@ class MyCongruTest extends TestCase
         $result = my_congru(1, 4, 2);
         $this->assertEquals(0, $result);
     }
+
+    public function testFloatNumber()
+    {
+        $result = my_congru(1.3, 4.4, 2.3);
+        $this->assertEquals(-1, $result);
+        $this->expectOutputString("va t'acheter des doigts !\n");
+    }
 }
