@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<phpunit colors="true">
+    <testsuite name="CryptoQuest Tests">
+        <directory suffix="_test.php">./tests</directory>
+    </testsuite>
+    <php>
+        <includePath>./</includePath>
+    </php>
+</phpunit>
