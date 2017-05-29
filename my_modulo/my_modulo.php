@@ -1,16 +1,16 @@
 <?php
 
-function error()
+function error($int)
 {
 	echo "va t'acheter des doigts !\n";
-	return (-1);
+	return ($int);
 }
 
 function my_modulo($int, $n)
 {
 	if (!is_int($int) || !is_int($n))
-		return (error());
+		return (error($int));
 	else if (!$n)
-		return (error());
+		return (error($int));
 	return $int - (intval($int / $n) * $n);
 }
