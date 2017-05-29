@@ -6,7 +6,7 @@ function error()
 	return (-1);
 }
 
-function my_modulo($int, $n)
+function my_modulo_neg($int, $n)
 {
 	if (!is_int($int) || !is_int($n))
 		return (error());
