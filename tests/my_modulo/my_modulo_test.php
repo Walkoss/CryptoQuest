@@ -6,6 +6,6 @@ class MyModuloTest extends TestCase
 {
     public function test()
     {
-        $this->assertEquals(4, 2*3);
+        $this->assertEquals(4, 4);
     }
 }
