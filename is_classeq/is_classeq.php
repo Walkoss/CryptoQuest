@@ -9,7 +9,6 @@ function my_congru2($a, $b, $n)
     }
     else if (is_int(($a - $b) / $n))
         return (1);
-
     return (0);
 }
 
@@ -22,10 +21,9 @@ function is_classeq($tab, $x, $n)
     }
     foreach ($tab as $value)
     {
-        $my_congru_result = my_congru($value, $x, $n);
+        $my_congru_result = my_congru2($value, $x, $n);
         if ($my_congru_result !== 1)
             return ($my_congru_result);
     }
-
     return (1);
 }

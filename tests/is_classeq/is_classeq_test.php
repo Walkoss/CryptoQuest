@@ -16,22 +16,20 @@ class IsClasseQTest extends TestCase
 
     public function testWithEmptyArray()
     {
-        $result = my_congru([], 12, 7);
+        $result = is_classeq([], 12, 7);
         $this->assertEquals(-1, $result);
         $this->expectOutputString("va t'acheter des doigts !\n");
     }
 
     public function testFailIsClasseQ()
     {
-        $result = my_congru([2, 3, 4], 12, 7);
-        $this->assertEquals(-1, $result);
-        $this->expectOutputString("va t'acheter des doigts !\n");
+        $result = is_classeq([2, 3, 4], 12, 7);
+        $this->assertEquals(0, $result);
     }
 
     public function testSuccessIsClasseQ()
     {
-        $result = my_congru([12, 34, 6], 4, 2);
-        $this->assertEquals(-1, $result);
-        $this->expectOutputString("va t'acheter des doigts !\n");
+        $result = is_classeq([12, 34, 6], 4, 2);
+        $this->assertEquals(1, $result);
     }
 }
