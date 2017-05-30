@@ -50,7 +50,7 @@ class MyModuloPosTest extends TestCase
     public function testNegativeDividend()
     {
         $result = my_modulo_pos(-8, 5);
-        $this->assertEquals(-3, $result);
+        $this->assertEquals(2, $result);
     }
 
     public function testPositiveDividend()
