@@ -43,7 +43,7 @@ class MyModuloTest extends TestCase
     public function testNegativeInteger()
     {
         $result = my_modulo(-8, -5);
-        $this->assertEquals(-3, $result);
+        $this->assertEquals(2, $result);
     }
 
     public function testPositiveAndNegativeInteger()
