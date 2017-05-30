@@ -7,28 +7,30 @@ include_once("is_classeq/is_classeq.php");
 
 class IsClasseQTest extends TestCase
 {
-    public function testDivisorZero()
+    public function testWithNoArray()
     {
-        $result = my_congru(1, 4, 0);
+        $result = is_classeq(1, 4, 0);
         $this->assertEquals(-1, $result);
         $this->expectOutputString("va t'acheter des doigts !\n");
     }
 
-    public function testSuccessCongru()
+    public function testWithEmptyArray()
     {
-        $result = my_congru(26, 12, 7);
-        $this->assertEquals(1, $result);
+        $result = my_congru([], 12, 7);
+        $this->assertEquals(-1, $result);
+        $this->expectOutputString("va t'acheter des doigts !\n");
     }
 
-    public function testFailCongru()
+    public function testFailIsClasseQ()
     {
-        $result = my_congru(1, 4, 2);
-        $this->assertEquals(0, $result);
+        $result = my_congru([2, 3, 4], 12, 7);
+        $this->assertEquals(-1, $result);
+        $this->expectOutputString("va t'acheter des doigts !\n");
     }
 
-    public function testFloatNumber()
+    public function testSuccessIsClasseQ()
     {
-        $result = my_congru(1.3, 4.4, 2.3);
+        $result = my_congru([12, 34, 6], 4, 2);
         $this->assertEquals(-1, $result);
         $this->expectOutputString("va t'acheter des doigts !\n");
     }
