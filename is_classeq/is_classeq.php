@@ -1,6 +1,6 @@
 <?php
 
-function my_congru2($a, $b, $n)
+function my_congru($a, $b, $n)
 {
     if (!$n || !is_int($a) || !is_int($b) || !is_int($n))
     {
@@ -18,6 +18,13 @@ function is_classeq($tab, $x, $n)
     {
         echo "va t'acheter des doigts !\n";
         return (-1);
+    }
+    foreach ($tab as $value) {
+        if (!is_int($value))
+        {
+            echo "va t'acheter des doigts !\n";
+            return (-1);
+        }
     }
     foreach ($tab as $value)
     {
