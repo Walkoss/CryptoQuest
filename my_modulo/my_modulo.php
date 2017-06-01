@@ -9,7 +9,7 @@ function my_modulo($int, $n)
 	}
 	else if (!$n)
 	{
-		echo "va t'acheter des doigts !\n";
+		echo "va t'acheter des dunereoigts !\n";
 		return ($int);
 	}
 	while ($int < 0 || $int >= abs($n))
