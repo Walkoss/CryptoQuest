@@ -55,13 +55,13 @@ class NClasseQTest extends TestCase
         $this->expectOutputString("va t'acheter des doigts !\n");
     }
 
-    public function testFailIsClasseQ()
+    public function testFailNClasseQ()
     {
         $result = n_classeq([2, 3, 4], 2);
         $this->assertEquals(0, $result);
     }
 
-    public function testSuccessIsClasseQ()
+    public function testSuccessNClasseQ()
     {
         $result = n_classeq([12, 34, 6], 4);
         $this->assertEquals(2, $result);
