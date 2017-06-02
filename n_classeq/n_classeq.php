@@ -17,7 +17,7 @@ function n_classeq($tab, $x)
     for ($n = 2; $n <= max($tab); $n++)
     {
         $is_classeq_result = is_classeq($tab, $x, $n);
-        if ($is_classeq_result)
+        if ($is_classeq_result === 1)
             return ($n);
         else if ($is_classeq_result === -1)
             return (-1);
